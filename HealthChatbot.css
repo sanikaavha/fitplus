@@ -1,0 +1,220 @@
+
+.health-chat-page {
+  padding: 24px;
+  color: #f1f5f9;
+  min-height: 100%;
+}
+
+.health-chat-card {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  background: #111827;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.health-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.health-chat-avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 25px;
+  border-radius: 14px;
+  background: #334155;
+}
+
+.health-chat-header h1 {
+  margin: 0 0 5px;
+  font-size: 21px;
+}
+
+.health-chat-header p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.health-chat-status {
+  margin-left: auto;
+  padding: 6px 10px;
+  color: #86efac;
+  background: #14532d;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.health-chat-notice {
+  padding: 12px 20px;
+  color: #cbd5e1;
+  background: #172033;
+  font-size: 12px;
+  text-align: center;
+}
+
+.health-chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  min-height: 300px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.health-chat-message {
+  max-width: 82%;
+  padding: 13px 16px;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.health-chat-message.bot {
+  align-self: flex-start;
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.health-chat-message.user {
+  align-self: flex-end;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.health-chat-message span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.health-chat-message p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.health-chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 0 24px 20px;
+}
+
+.health-chat-suggestions button {
+  padding: 9px 12px;
+  color: #bfdbfe;
+  background: #172554;
+  border: 1px solid #1d4ed8;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.health-chat-suggestions button:hover {
+  background: #1e40af;
+}
+
+.health-chat-form {
+  display: flex;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid #334155;
+  background: #1e293b;
+}
+
+.health-chat-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 15px;
+  color: #f8fafc;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.health-chat-form input:focus {
+  border-color: #60a5fa;
+}
+
+.health-chat-form button {
+  padding: 0 22px;
+  color: white;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.health-chat-form button:hover {
+  background: #1d4ed8;
+}
+
+.health-chat-disclaimer {
+  margin: 0;
+  padding: 0 24px 20px;
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .health-chat-page {
+    padding: 10px;
+  }
+
+  .health-chat-header {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .health-chat-header h1 {
+    font-size: 17px;
+  }
+
+  .health-chat-status {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+
+  .health-chat-messages {
+    padding: 16px;
+    min-height: 250px;
+  }
+
+  .health-chat-message {
+    max-width: 92%;
+  }
+
+  .health-chat-suggestions {
+    padding: 0 16px 16px;
+  }
+
+  .health-chat-form {
+    padding: 14px;
+  }
+
+  .health-chat-form button {
+    padding: 0 15px;
+  }
+
+  .health-chat-disclaimer {
+    padding: 0 16px 16px;
+  }
+}
